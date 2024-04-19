@@ -1,0 +1,9 @@
+<p>Bienvenido/a a la sección de comentarios</p>
+@for (comentario of comentarios; track $index) {
+
+<ul>
+    <li>{{comentario}}</li>
+</ul>
+
+}
+<app-escribir-comentarios (comentarioEnviar)="addComentario($event)"></app-escribir-comentarios>
